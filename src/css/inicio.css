@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main img {
+    margin-right: 2rem; /* Adiciona margem direita à imagem para afastá-la do texto */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .apresentacao {
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    main img {
+        margin-right: 0; /* Remove a margem direita da imagem */
+        margin-top: 20px; /* Adiciona margem superior para separar a imagem do texto */
+    }
+}
+
+
+.texto {
+    max-width: 600px; /* Limita a largura do texto */
+    text-align: left; 
+    padding: 1rem;
+}
+
+.texto p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}

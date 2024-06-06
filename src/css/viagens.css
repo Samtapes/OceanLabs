@@ -1,0 +1,127 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.box {
+    background-color: #253A45;
+    width: 70vw;
+    padding: 2rem;
+}
+
+.box h1 {
+    text-align: center;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); /* Grid responsivo com no máximo 3 cartões por linha */
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 15rem;
+    background-color: #4D6573;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Remove a altura fixa */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.btn-delete {
+    border: none;
+    background-color: #4D6573;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #698494;
+}
+
+.bi-trash {
+    color: red;
+}
+
+.card-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+.card-subtext {
+    font-style: italic;
+}
+
+
+
+
+.filtro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro {
+    width: 12rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4D6573;
+    margin-left: 0.3rem;
+    margin-right: 2rem;
+    color: white;
+    outline: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .filtro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .filtro {
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+
+.btns-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btns-section .btn-light {
+    margin-right: 3rem;
+}

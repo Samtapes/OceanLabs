@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Labs</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/cadastro.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./viagens.html" class="atual">Viagens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box">
+            <a href="./viagens.html"><button class="btn-dark">< Voltar</button></a>
+
+            <h1>Nova Viagem</h1>
+
+            <form action="">
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="title">Titulo:</label>
+                        <input type="text" name="title" id="title" class="input">
+                    </div>
+    
+    
+                    <div class="input-container">
+                        <label for="date">Data:</label>
+                        <input type="date" name="date" id="date" class="input">
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <div class="input-container">
+                        <label for="description">Descrição:</label>
+                        <textarea class="input" name="description" id="description"></textarea>
+                    </div>
+    
+                    <div class="input-container">
+                        <label for="type">Modelo:</label>
+                        <select name="type" id="type" class="input">
+                            <option value="">Nenhum</option>
+                            <option value="SeaVex">SeaVex</option>
+                            <option value="Interceptron">Interceptron</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="btns-section">
+                    <button class="btn-light">Salvar</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+</body>
+</html>
