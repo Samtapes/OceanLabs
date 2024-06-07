@@ -49,6 +49,14 @@ main {
     border: none;
     background-color: #4D6573;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    z-index: 1; /* Garante que o botão de exclusão esteja sempre visível */
+    opacity: 0;
+    transition: opacity 0.3s; /* Adiciona uma transição suave para a opacidade */
 }
 
 .btn-delete:hover {
@@ -87,10 +95,11 @@ main {
 }
 
 
-/* ANIMAÇÃO */
+/* ====== ANIMAÇÃO ======= */
 .card-title, .card-text, .card-subtext {
     backface-visibility: hidden;
 }
+
 
 .card-description {
     position: absolute;
@@ -114,6 +123,8 @@ main {
     transition: opacity 0.6s;
 }
 
+
+/* Tudo sumir quando colocar o mouse */
 .card:hover .card-img,
 .card:hover .card-title,
 .card:hover .card-text,
@@ -121,9 +132,26 @@ main {
     opacity: 0;
 }
 
+
+/* descrição aparecer quando colocar o mouse */
 .card:hover .card-description {
     opacity: 1;
 }
+
+/* Botão de apagar aparecer quando colocar o mouse */
+.card:hover .btn-delete {
+    opacity: 1;
+}
+
+
+.card-removing {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+/* ====== FIM ANIMAÇÃO ======= */
+
+
 
 
 
